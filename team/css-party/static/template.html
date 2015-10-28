@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>css-party</title>
+    <meta charset="utf-8">
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <body>
+    <div id="user-controls">
+      <button name="login">login</button>
+      <div class="info">
+        wb <span data-hook="username"></span>
+        <button name="logout">logout</button>
+      </div>
+    </div>
+    <div id="controls">
+      <button name="open">+</button>
+      <button name="close">-</button>
+
+      <div class="inner">
+        <div class="selector">
+          <label>DIV</label>
+          <select name="div"></select>
+        </div>
+
+        <div class="plugins">
+          <select name="plugin">
+            <option>- Tools -</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="divs"></div>
+
+    {{ initJs }}
+    <script src="/static/dist/main.js"></script>
+  </body>
+</html>

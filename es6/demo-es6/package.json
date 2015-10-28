@@ -1,0 +1,10 @@
+{
+  "registry": "jspm",
+  "main": "lib/main",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
+}

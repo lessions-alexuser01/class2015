@@ -1,0 +1,38 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://saucelabs.com/test/guinea-pig"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#i_am_an_id"
+      }
+    },
+    {
+      "type": "storeEval",
+      "script": "return document.querySelectorAll('body div').length",
+      "variable": "num_of_div_elements"
+    },
+    {
+      "type": "verifyEval",
+      "script": "return ${num_of_div_elements}",
+      "value": "7"
+    },
+    {
+      "type": "verifyEval",
+      "script": "return document.querySelectorAll('body div').length >= 7",
+      "value": "true"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": []
+}

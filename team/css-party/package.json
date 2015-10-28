@@ -1,0 +1,49 @@
+{
+  "name": "css-party",
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "attachmediastream": "^1.0.1",
+    "bind-fn": "^1.0.1",
+    "browserify": "^6.2.0",
+    "concat-stream": "^1.4.6",
+    "cuid": "^1.2.4",
+    "ecstatic": "^0.5.6",
+    "element-class": "^0.2.0",
+    "getusermedia": "^1.1.0",
+    "minipipe": "0.1.0",
+    "paramify": "^0.1.2",
+    "parse-data-uri": "^0.2.0",
+    "pleasejs": "^0.4.2",
+    "redis": "^0.12.1",
+    "scroll": "0.0.3",
+    "style-attr": "^1.0.1",
+    "uglify-js": "^2.4.16",
+    "watchify": "^2.1.1",
+    "watchob": "^1.1.0",
+    "ws": "^0.4.32",
+    "ws-mux": "0.0.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/browserify client/main.js | ./node_modules/.bin/uglifyjs > static/dist/main.js",
+    "build-watch": "./node_modules/.bin/watchify -d -v -o static/dist/main.js client/main.js",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshwnj/css-party.git"
+  },
+  "author": "joshwnj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshwnj/css-party/issues"
+  },
+  "homepage": "https://github.com/joshwnj/css-party",
+  "devDependencies": {}
+}

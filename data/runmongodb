@@ -1,0 +1,2 @@
+[ ! -d ./mongodb ] && mkdir mongodb
+mongod --dbpath=`pwd`/mongodb

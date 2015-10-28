@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background: #FAFAFA;
+}
+
+[draggable] {
+  cursor: pointer;
+}
+
+button {
+  padding: 3px 10px;
+  margin: 2px;
+  background: #FFF;
+  border: 2px solid #999;
+  color: #555;
+  border-radius: 8px;
+  min-width: 25px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border: 2px solid #3CF;
+  background: #FAFAFA;
+  cursor: pointer;
+}
+
+#divs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+#controls {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  height: auto;
+  overflow: auto;
+  text-align: right;
+  padding: 10px;
+}
+
+#controls .inner {
+  text-align: left;
+}
+
+#controls input[type=text] {
+  padding: 3px;
+  border: 2px solid #999;
+}
+
+#controls input[type=text]:focus {
+  border: 2px solid #3CF;
+  outline: none;
+}
+
+#controls .selector {
+  margin: 5px 0;
+}
+
+#controls select.plugin {
+  margin: 5px 0;
+}
+
+#controls,
+#user-controls,
+button,
+select,
+input {
+  font: 11px Verdana, sans-serif;
+}
+
+/* hidden by default */
+#controls .inner,
+#controls button[name=close] { display: none; }
+
+/* visible when ui is active */
+.show-controls #controls button[name=close] { display: inline-block; }
+.show-controls #controls .inner { display: block; }
+
+/* hidden when ui is active */
+.show-controls #controls button[name=open] { display: none; }
+
+.show-controls #controls {
+  background: rgba(255,255,255,0.8);
+  width: 300px;
+  top: 40px;
+}
+
+#user-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#user-controls .info { display: none; }
+.is-logged-in #user-controls [name=login] { display: none; }
+.is-logged-in #user-controls .info { display: block; }
+
+#divs { z-index: 1; }
+#controls { z-index: 2; }
+#user-controls { z-index: 3; }
+
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.spinner {
+  -webkit-animation-name:             rotate;
+  -webkit-animation-duration:         0.5s;
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+}

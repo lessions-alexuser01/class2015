@@ -1,0 +1,26 @@
+{
+  "name": "2b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "jsonp": "npm:jsonp@^0.2.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "html-dist": "^0.1.0",
+    "uglifyjs": "^2.4.10"
+  }
+}

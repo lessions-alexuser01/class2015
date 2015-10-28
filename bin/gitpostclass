@@ -1,0 +1,4 @@
+git add -A .
+git commit -m initial-class-note-checkin
+git tag v0.1.0
+git push

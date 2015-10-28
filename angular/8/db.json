@@ -1,0 +1,21 @@
+{
+  "rules": [
+    {
+      "rulename": "Must be 5 characters"
+    },
+    {
+      "rulename": "Must not be used elsewhere"
+    },
+    {
+      "rulename": "Must be cool"
+    },
+    {
+      "rulename": "Must eat well",
+      "id": "48a27d7b-907a-4a61-9ba0-252eb654c00c"
+    },
+    {
+      "rulename": "Must sleep well",
+      "id": "3f793207-a05a-4ec6-8570-1ef72cf5a299"
+    }
+  ]
+}

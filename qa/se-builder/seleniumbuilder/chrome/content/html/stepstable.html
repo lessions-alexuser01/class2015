@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Steps Table</title>
+    <script src="chrome://seleniumbuilder/content/html/js/lib/jquery-ui-1.8.17.custom/js/jquery-1.7.1.min.js"></script>
+    <style type="text/css">
+      body, html {  
+        font-size: 8pt;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+        font-family: "Lucida Grande" ,"SegoeUI", sans-serif;
+      }
+      
+      table {
+        font-size: 100%;
+        width: 100%;
+      }
+      
+      td { margin: 0px; border-right: 1px dotted #bfee85; padding: 3px; }
+      
+      tr.labels { background-color: #bfee85; font-weight: bold; }
+      tr.r0 { background-color: #ffffff; }
+      tr.r1 { background-color: #f3f3f3; }
+      .yes { color: #009900; }
+      .no { color: #990000; }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="showorphans" /> <span id="showorphans-text"></span><br/>
+    <div id="content" />
+    <script type="text/javascript">
+      jQuery('#showorphans').click(function() {
+        if (jQuery('#showorphans').is(':checked')) {
+          jQuery('#stepstable').hide();
+          jQuery('#stepstable-extended').show();
+        } else {
+          jQuery('#stepstable').show();
+          jQuery('#stepstable-extended').hide();
+        }
+      });
+    
+      window.insertContent = function(content) {
+        document.getElementById("content").appendChild(content);
+        window.stayAlive = true;
+      };
+      
+      window.assumeDeadBy = setTimeout(function() {
+        if (!window.stayAlive) {
+          window.close();
+        }
+      }, 500);
+    </script>
+  </body>
+</html>

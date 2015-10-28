@@ -1,0 +1,45 @@
+{
+    "images": [],
+    "divs": [
+        {
+            "style": "left: 58px; top: 20px; font-size: 64px; z-index: 0; position: absolute; transform: rotate(-9deg); background: none 0% 0% repeat scroll red; transition: 0.2s",
+            "text": "Welcome"
+        },
+        {
+            "style": "position: absolute; left: 91px; top: 99px;",
+            "text": "to"
+        },
+        {
+            "style": "position: absolute; left: 112px; top: 96px;",
+            "text": "the"
+        },
+        {
+            "style": "position: absolute; left: 137px; top: 64px; font-size: 52px;transition: 0.2s",
+            "text": "css"
+        },
+        {
+            "style": "position: absolute; left: 208px; top: 83px; font-size: 20px; transform: rotate(-5deg);",
+            "text": "party"
+        },
+        {
+            "style": "position: absolute; left: 151px; top: 130px; font-size: 14px;",
+            "text": "(* run help() in the console for more info)"
+        },
+        {
+            "style": "position: absolute; left: 8px; top: -1px; font-size: 80px; z-index: 0;",
+            "text": "*"
+        },
+        {
+            "style": "position:absolute;left:0px;top:0px",
+            "text": ""
+        },
+        {
+            "style": "position:absolute;left:0px;top:0px",
+            "text": ""
+        },
+        {
+            "style": "position:absolute;left:0px;top:0px",
+            "text": ""
+        }
+    ]
+}
