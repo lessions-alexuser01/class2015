@@ -1,0 +1,4 @@
+cat libWebRTC.a-1 libWebRTC.a-2 > libWebRTC.a
+echo "File merged into libWebRTC.a.  Please validate it's md5sum"
+echo "Original md5sum is : 52b59e60e6a0537891907606ecd22132"
+
